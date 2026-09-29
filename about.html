@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | About Us</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>About Us</h1>
-  </header>
+    <header>
+        <img src="assets/image/bakery-logo_c.png" alt="North Star Bakery Official Logo" class="logo">
+        <h1>Our Story</h1>
+    </header>
 
-  <main>
-    <h2>Who We Are</h2>
-    <p>Welcome to our website. This page provides basic information about our organization.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact & Pre-order</a>
+    </nav>
 
-    <h2>Our Purpose</h2>
-    <p>Our goal is to provide helpful information and resources to our visitors.</p>
-  </main>
+    <main>
+        <section class="flex-container">
+            <div class="flex-item">
+                <h2>The Bakery Story</h2>
+                <p>North Star Bakery began in a small home kitchen with a simple goal: to bake bread that brings people together. Years later, we opened our doors to the community. We believe in the power of breaking bread, sharing stories, and treating every customer like a neighbor.</p>
+                
+                <h2>Our Sourcing Philosophy</h2>
+                <p>We source 100% of our organic wheat flour from local mills within a 50-mile radius. By partnering with local farmers for our dairy, fruits, and eggs, we ensure that every bite supports our local economy.</p>
 
-  <footer>
-    <p>&copy; 2026 Our Website</p>
-  </footer>
+                <h2>Staff Highlights</h2>
+                <p><strong>Head Baker Maria:</strong> With 15 years of pastry experience, Maria wakes up at 3 AM every day to ensure the croissants are perfectly flaky.<br>
+                <strong>Manager David:</strong> The friendly face at the counter who probably already has your morning coffee order memorized!</p>
+            </div>
+
+            <div class="flex-item">
+                <h2>Behind the Scenes</h2>
+                <p>Take a peek into our kitchen to see how the magic happens every morning!</p>
+                <video controls width="100%" poster="assets/image/bakery-storefront_c.png">
+                    <source src="assets/video/bakery-behind-scenes_c.mp4" type="video/mp4">
+                    <p>Your browser does not support the HTML5 video tag. We are sorry you cannot view our behind-the-scenes bakery footage!</p>
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+    </footer>
 </body>
 </html>

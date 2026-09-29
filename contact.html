@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/image/bakery-logo_c.png" alt="North Star Bakery Official Logo" class="logo">
+        <h1>Contact & Pre-Orders</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact & Pre-order</a>
+    </nav>
+
+    <main class="flex-container">
+        <section class="flex-item">
+            <h2>Get in Touch</h2>
+            <form action="#" method="POST">
+                <!-- Group 1: Customer Information -->
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Jane Doe">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                </fieldset>
+
+                <!-- Group 2: Order Details -->
+                <fieldset>
+                    <legend>Order Details</legend>
+
+                    <label for="pickup-date">Requested Pickup Date:</label>
+                    <input type="date" id="pickup-date" name="pickup-date">
+
+                    <label for="request-type">Request Type:</label>
+                    <select id="request-type" name="request-type" required>
+                        <option value="" disabled selected>Select an option...</option>
+                        <option value="pre-order">Bakery Pre-Order</option>
+                        <option value="event">Event Catering</option>
+                        <option value="general">General Question</option>
+                    </select>
+
+                    <label for="item-details">Item Details / Questions:</label>
+                    <textarea id="item-details" name="item-details" rows="4" placeholder="Let us know what you would like to order or ask..."></textarea>
+
+                    <label for="allergy-notes">Allergy Notes (If applicable):</label>
+                    <textarea id="allergy-notes" name="allergy-notes" rows="2" placeholder="e.g., Nut allergy, Gluten sensitivity"></textarea>
+                </fieldset>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <section class="flex-item">
+            <h2>Visit Us</h2>
+            <img src="assets/image/bakery-storefront_c.png" alt="The welcoming front entrance of North Star Bakery">
+            <h3>Location</h3>
+            <p>123 Main Street<br>Community Square, Town 12345</p>
+            
+            <h3>Hours of Operation</h3>
+            <ul>
+                <li><strong>Monday:</strong> Closed for baking prep!</li>
+                <li><strong>Tuesday - Friday:</strong> 6:00 AM - 4:00 PM</li>
+                <li><strong>Saturday - Sunday:</strong> 7:00 AM - 3:00 PM</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
