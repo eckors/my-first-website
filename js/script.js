@@ -194,8 +194,8 @@ function validateForm() {
     typeError.textContent = '';
 
     // Validation 1: Required & Minimum Length (Name)
-    if (nameInput.value.trim().length < 2) {
-        nameError.textContent = 'Please enter a name with at least 2 characters.';
+    if (nameInput.value.trim().length < 5) {
+        nameError.textContent = 'Please enter a name with at least 5 characters.';
         isValid = false;
     }
 
