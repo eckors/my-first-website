@@ -20,24 +20,39 @@
     </nav>
 
     <main>
+       <!-- GLOBAL FAVORITES TRACKER (Collapsible) -->
+        <details id="favorites-section" class="favorites-panel">
+            <summary class="favorites-header">
+                <span>♥</span> Your Saved Favorites <span id="fav-count" style="font-weight: normal; font-size: 0.9em; color: #777;">(0)</span>
+            </summary>
+            
+            <div id="favorites-list">
+                <p id="empty-fav-msg" class="empty-fav-msg">You haven't saved any items yet. Visit the Products page to add some!</p>
+            </div>
+        </details>
+        
         <h2>Handmade Daily</h2>
         <p>Browse our selection below. To place an order, please visit our <a href="contact.html">Contact & Pre-order page</a>.</p>
 
+        <!-- UPDATED: Added data-id attributes and Favorite buttons -->
         <section class="flex-container">
             <div class="flex-item">
                 <h3>Artisanal Breads</h3>
                 <p>Slow-fermented and baked on a stone hearth for the perfect crust. <strong>($6.00 - $12.00)</strong></p>
                 <img src="assets/image/bakery-bread_c.png" alt="A basket full of freshly baked, crusty artisan breads">
+                <button class="fav-btn" data-id="Artisanal Breads" style="margin-top: 15px;">♡ Add to Favorites</button>
             </div>
 
             <div class="flex-item">
                 <h3>Morning Pastries</h3>
                 <p>Flaky croissants, sweet fruit danishes, and savory scones perfect for your morning commute. <strong>($3.50 - $6.00)</strong></p>
+                <button class="fav-btn" data-id="Morning Pastries" style="margin-top: 15px;">♡ Add to Favorites</button>
             </div>
 
             <div class="flex-item">
                 <h3>Celebration Cakes</h3>
                 <p>Custom, multi-tiered cakes tailored to your family's special events. <strong>($35.00 - $85.00)</strong></p>
+                <button class="fav-btn" data-id="Celebration Cakes" style="margin-top: 15px;">♡ Add to Favorites</button>
             </div>
         </section>
 
@@ -45,6 +60,7 @@
             <figure>
                 <img src="assets/image/bakery-signature-loaf_c.png" alt="A close-up view of the crust and crumb of our Signature North Star sourdough loaf">
                 <figcaption>The North Star Signature Loaf - Our 48-hour fermented sourdough.</figcaption>
+                <button class="fav-btn" data-id="Signature Sourdough Loaf" style="margin-top: 15px;">♡ Add to Favorites</button>
             </figure>
         </section>
     </main>
@@ -52,5 +68,6 @@
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

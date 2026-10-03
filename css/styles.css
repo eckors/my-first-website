@@ -184,3 +184,109 @@ footer {
         align-self: flex-start;
     }
 }
+/* ========================================================= */
+/* FORM VALIDATION STYLES */
+/* ========================================================= */
+.error-text {
+    color: #cc0000; /* A strong red for errors */
+    font-size: 0.9rem;
+    margin-top: -10px;
+    display: block;
+    min-height: 1.2em; /* Keeps the form from jumping when text appears */
+}
+/* ========================================================= */
+/* GLOBAL FAVORITES SECTION - COLLAPSIBLE */
+/* ========================================================= */
+.favorites-panel {
+    background-color: white;
+    padding: 12px 20px; /* Reduced padding for a slimmer profile */
+    border-radius: 8px;
+    border: 1px solid #e0d8d0; /* Softer, thinner border */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
+    margin-bottom: 30px;
+}
+
+/* The clickable header */
+.favorites-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 0;
+    list-style: none; /* Removes default browser arrow */
+    outline: none;
+}
+
+/* Removes default arrow in Safari/Chrome */
+.favorites-header::-webkit-details-marker {
+    display: none;
+}
+
+/* Custom + icon that pushes to the right edge */
+.favorites-header::after {
+    content: '+';
+    margin-left: auto; 
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--secondary-color);
+    transition: transform 0.3s ease;
+}
+
+/* Rotates the + into an X when the box is open */
+details[open] .favorites-header::after {
+    transform: rotate(45deg);
+}
+
+/* Adds a divider line only when open */
+#favorites-list {
+    padding-top: 15px;
+    margin-top: 12px;
+    border-top: 1px solid #eee;
+}
+
+.empty-fav-msg {
+    margin: 0;
+    font-style: italic;
+    color: #777;
+}
+
+/* The pill-shaped tags */
+.favorites-tag-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* The pill-shaped tags - UPDATED for clicking */
+.favorites-tag-list li {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(217, 142, 54, 0.2);
+    cursor: pointer; /* Changes mouse to a pointer hand */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s ease;
+}
+
+/* Turns the tag red on hover to indicate removal */
+.favorites-tag-list li:hover {
+    background-color: #cc0000; 
+}
+
+/* Styles the small "x" on the tag */
+.remove-icon {
+    font-weight: normal;
+    font-size: 1.2em;
+    opacity: 0.8;
+}

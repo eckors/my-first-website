@@ -18,29 +18,40 @@
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact & Pre-order</a>
     </nav>
+    <!-- GLOBAL FAVORITES TRACKER (Collapsible) -->
+        <details id="favorites-section" class="favorites-panel">
+            <summary class="favorites-header">
+                <span>♥</span> Your Saved Favorites <span id="fav-count" style="font-weight: normal; font-size: 0.9em; color: #777;">(0)</span>
+            </summary>
+            
+            <div id="favorites-list">
+                <p id="empty-fav-msg" class="empty-fav-msg">You haven't saved any items yet. Visit the Products page to add some!</p>
+            </div>
+        </details>
 
     <main class="flex-container">
+        
         <section class="flex-item">
             <h2>Get in Touch</h2>
-            <form action="#" method="POST">
-                <!-- Group 1: Customer Information -->
+            <!-- ADDED id="order-form" and novalidate attribute -->
+            <form id="order-form" action="#" method="POST" novalidate>
                 <fieldset>
                     <legend>Customer Information</legend>
                     
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                    <span id="name-error" class="error-text"></span>
 
                     <label for="email">Email Address:</label>
                     <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                    <span id="email-error" class="error-text"></span>
+
                 </fieldset>
 
-                <!-- Group 2: Order Details -->
                 <fieldset>
                     <legend>Order Details</legend>
-
                     <label for="pickup-date">Requested Pickup Date:</label>
                     <input type="date" id="pickup-date" name="pickup-date">
-
                     <label for="request-type">Request Type:</label>
                     <select id="request-type" name="request-type" required>
                         <option value="" disabled selected>Select an option...</option>
@@ -48,7 +59,8 @@
                         <option value="event">Event Catering</option>
                         <option value="general">General Question</option>
                     </select>
-
+                    <!-- ADDED: Error span for Request Type -->
+                    <span id="type-error" class="error-text"></span>
                     <label for="item-details">Item Details / Questions:</label>
                     <textarea id="item-details" name="item-details" rows="4" placeholder="Let us know what you would like to order or ask..."></textarea>
 
@@ -57,6 +69,8 @@
                 </fieldset>
 
                 <button type="submit">Submit Request</button>
+                <!-- ADDED: Success message -->
+                <p id="form-success-msg" style="color: green; font-weight: bold; display: none;">Thanks! We will be in touch shortly.</p>
             </form>
         </section>
 
@@ -78,5 +92,6 @@
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

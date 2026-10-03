@@ -20,6 +20,18 @@
     </nav>
 
     <main>
+       
+       <!-- GLOBAL FAVORITES TRACKER (Collapsible) -->
+        <details id="favorites-section" class="favorites-panel">
+            <summary class="favorites-header">
+                <span>♥</span> Your Saved Favorites <span id="fav-count" style="font-weight: normal; font-size: 0.9em; color: #777;">(0)</span>
+            </summary>
+            
+            <div id="favorites-list">
+                <p id="empty-fav-msg" class="empty-fav-msg">You haven't saved any items yet. Visit the Products page to add some!</p>
+            </div>
+        </details>
+        
         <section class="flex-container">
             <div class="flex-item">
                 <h2>The Bakery Story</h2>
@@ -47,5 +59,6 @@
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
